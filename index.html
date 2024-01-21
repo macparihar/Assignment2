@@ -121,31 +121,76 @@
   <br>
   <form class="row g-3" id="Contact">
     <h1 class="tit">Contact Form</h1>
-    <div class="col-md-6">
-      <label for="inputName4" class="form-label">Name</label>
+    <div class="col-md-3">
+      <label for="inputName4" class="form-label">First Name</label>
       <input type="name" class="form-control" id="inputName4" placeholder="First Name">
     </div>
-    <div class="col-md-6">
-      <label for="inputEmail4" class="form-label">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="example@gmail.com">
+    <div class="col-md-3">
+      <label for="inputName4" class="form-label">Last Name</label>
+      <input type="name" class="form-control" id="inputName4" placeholder="Last Name">
     </div>
-    <div class="col-12">
-      <label for="inputAddress" class="form-label">Address</label>
+    <div class="col-md-3">
+      <label for="inputGender4" class="form-label">Gender</label>
+      <!-- <input type="gender" class="form-control" id="inputGender4" placeholder="Male/Female/other" > -->
+      <select id="inputState" class="form-select">
+        <option>Male</option>
+        <option>female</option>
+      </select>
+    </div>
+    <div class="col-md-3">
+      <label for="inputAge4" class="form-label">Age</label>
+      
+      <select id="inputState" class="form-select">
+        <option>16</option>
+        <option>17</option>
+        <option selected>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+      </select>
+    </div>
+
+    <div class="col-6">
+      <label for="inputEmail" class="form-label">Email</label>
+      <input type="text" class="form-control" id="inputEmail" placeholder="example@gmail.com">
+    </div>
+    <div class="col-6">
+      <label for="inputAddress" class="form-label">Phone</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="(xxx)xxx-xxxx">
+    </div>
+
+    
+    <div class="col-6">
+      <label for="inputAddress" class="form-label">Address 1</label>
       <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
     </div>
-    <div class="col-12">
-      <label for="inputAddress2" class="form-label">Address 2</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    <div class="col-6">
+      <label for="inputAddress" class="form-label">Address 2</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
     </div>
-    <div class="col-md-6">
+    
+    <div class="col-md-4">
       <label for="inputCity" class="form-label">City</label>
       <input type="text" class="form-control" id="inputCity">
     </div>
     <div class="col-md-4">
-      <label for="inputState" class="form-label">State</label>
+      <label for="inputCity" class="form-label">Province</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">Country</label>
       <select id="inputState" class="form-select">
-        <option selected>Choose...</option>
-        <option>...</option>
+        <option selected>Canada</option>
+        <option>India</option>
       </select>
     </div>
     <div class="col-md-2">
