@@ -114,8 +114,8 @@ color: #FEC544;
     align-items: center;
     padding: 10px;
 }
-.card-group{
-    
+.card{
+    position: inherit!important;
 }
 
 /* Custom styles for the footer */
