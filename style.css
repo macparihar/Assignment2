@@ -98,9 +98,24 @@ color: #FEC544;
 
 
 /* Custom styles for the contact */
-
 #Contact{
-    padding: 100px 60px;
+    padding: 56px 60px;
+}
+
+/* Custom styles for the Service */
+#Service{
+    padding: 56px 60px;
+}
+.card img{
+    width: 200px;
+    
+}
+.card{
+    align-items: center;
+    padding: 10px;
+}
+.card-group{
+    
 }
 
 /* Custom styles for the footer */
@@ -113,3 +128,11 @@ footer {
   width: auto;
 }
 
+
+
+/* contact form */
+span{
+    color: red;
+    font-size: 14px;
+    /* position: absolute; */
+}
