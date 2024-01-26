@@ -57,18 +57,18 @@ function validatePhone() {
     return true
 }
 
-function validateMessage() {
-    const message = document.getElementById('inputMessage4')
-    const required = 30;
-    const left = required - message.length;
+// function validateMessage() {
+//     const message = document.getElementById('inputMessage4')
+//     const required = 30;
+//     const left = required - message.length;
 
-    if (left < 0) {
-        messageError.innerHTML = left + "more character required";
-        return false;
-    }
-    messageError.innerHTML = "successful"
-    return true;
-}
+//     if (left < 0) {
+//         messageError.innerHTML = left + "more character required";
+//         return false;
+//     }
+//     messageError.innerHTML = "successful"
+//     return true;
+// }
 
 
 function validateForm() {

@@ -1,336 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment 2</title>
 
-    <link rel="stylesheet" href="style.css" />
-    <!-- <script>
-    var nameError = document.getElementById('name-error');
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment 2</title>
 
-    function validateName() {
-      
-    var name = document.getElementById("inputName4").value;
+  <link rel="stylesheet" href="style.css" />
+ 
+  <!-- TAILWIND CSS -->
+  <link href="./output.css" rel="stylesheet" />
 
-    if (name.length == 0) {
-        nameError.innerHTML = "Name is required";   
-        return false;
-    }     
-    if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
-        nameError.innerHTML = "Write your full name";
-        return false;
-    }
-    nameError.innerHTML = "successful";
-    return true;
-   
-}
+  <!-- BOOTSTRAP CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
 
-</script> -->
-
-    <!-- TAILWIND CSS -->
-    <link href="./output.css" rel="stylesheet" />
-
-    <!-- BOOTSTRAP CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-  </head>
-
-  <body>
-    <!-- NAVBAR START -->
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark" id="navbar">
-      <div class="container-fluid">
-        <img src="/icons/business.png" class="sm" alt="" srcset="" />
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#Home"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#About">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#Portfolio"> Portfolio </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#Service">Service</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#Contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+<body>
+  <!-- NAVBAR START -->
+  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark" id="navbar">
+    <div class="container-fluid">
+      <img src="/icons/business.png" class="sm" alt="" srcset="" />
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#Experience"> Experience </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#Service">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#Contact">Contact</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-
-    <!-- NAVBAR END -->
-
-    <!-- HOME START -->
-
-    <div class="showcase-containt" id="Home">
-      <div class="show-text">
-        <div class="text-1">Hello my name is,</div>
-        <div class="text-2">Milan Parihar</div>
-        <div class="text-3">And i'm a <small>student</small></div>
-        <a href="#" id="button">Here me</a>
-      </div>
-      <!-- <div class="show-image"><img src="/icons/homeimg.avif" alt=""></div> -->
     </div>
-    <br />
-    <!-- HOME END -->
+  </nav>
 
-    <!-- ABOUT START -->
-    <br />
-    <br />
-    <section class="about" id="About">
-      <h1 class="tit">About Me</h1>
-      <div class="container">
-        <h5 class="title text-center m-heading text-secondary mil">About Me</h5>
-        <div class="about-content">
-          <div class="column left">
-            <!-- <img src="images/Davis.jpg" alt=""> -->
-          </div>
-          <div class="column right">
-            <div class="text">I'm Milan and I'm student</div>
-            <p>
-              I'm a visual designer with a strong focus on digital branding.
-              Visual designe seeks to attract, ispire and reat desires and
-              motivate people to responde to messages, with a view to making a
-              favorible impackt
-            </p>
+  <!-- NAVBAR END -->
 
-            <table class="table">
-              <tr>
-                <td>Birthday</td>
-                <td>: Feb 2002</td>
-              </tr>
+  <!-- HOME START -->
 
-              <tr>
-                <td>Phone</td>
-                <td>: +1 (123)456-7890</td>
-              </tr>
+  <div class="showcase-containt" id="Home">
+    <div class="show-text">
+      <div class="text-1">Hello my name is,</div>
+      <div class="text-2">Milan Parihar</div>
+      <div class="text-3">And i'm a <small>Developer</small></div>
+      <a href="#" id="button">Here me</a>
+    </div>
+    <div class="show-image"><img src="/icons/35496093_2211.w026.n002.2759B.p1.2759.jpg" alt=""></div>
+  </div>
+  <br />
+  <!-- HOME END -->
 
-              <tr>
-                <td>Email</td>
-                <td>: milanparihar71@gmail.com</td>
-              </tr>
-              <tr>
-                <td>From</td>
-                <td>: Edmonton, AB</td>
-              </tr>
-              <tr>
-                <td>Language</td>
-                <td>: English, Hindi, Panjabi</td>
-              </tr>
-            </table>
-            <a href="#" id="button"> Downlowd CV </a>
-          </div>
+  <!-- ABOUT START -->
+  <br />
+  <br />
+  <section class="about" id="About">
+    <h1 class="tit">About Me</h1>
+    <div class="container">
+      <h5 class="title text-center m-heading text-secondary mil">About Me</h5>
+      <div class="about-content">
+        <div class="column left">
+          <!-- <img src="images/Davis.jpg" alt=""> -->
         </div>
-      </div>
-    </section>
-
-    <!-- SERVICE END -->
-
-    <br />
-    <br />
-    <section class="service" id="Service">
-      <h1 class="tit">Service</h1>
-      <div class="container">
-        <h5 class="title text-center m-heading text-secondary mil">Service</h5>
-        <div class="text">
-
+        <div class="column right">
+          <div class="text">I'm Milan and I'm student</div>
           <p>
-            Once upon a digital time, in the realm of bytes and pixels, there was a maestro named Shivam, a freelance whiz! With a flick of his fingers, intricate web applications sprung to life, dancing seamlessly across screens. In the vast universe of software, he'd weave constellations of code, turning ideas into functional masterpieces. Riding the clouds of AWS and Google, he'd harness their power for every project's needs. So, if you're in search of a tech sorcerer to bring your visions to the virtual realm, look no further. With Shivam, every digital dream becomes reality!
+            I'm a visual designer with a strong focus on digital branding.
+            Visual designe seeks to attract, ispire and reat desires and
+            motivate people to responde to messages, with a view to making a
+            favorible impackt
           </p>
+
+          <table class="table">
+            <tr>
+              <td>Birthday</td>
+              <td>: Feb 2002</td>
+            </tr>
+
+            <tr>
+              <td>Phone</td>
+              <td>: +1 (123)456-7890</td>
+            </tr>
+
+            <tr>
+              <td>Email</td>
+              <td>: milanparihar71@gmail.com</td>
+            </tr>
+            <tr>
+              <td>From</td>
+              <td>: Edmonton, AB</td>
+            </tr>
+            <tr>
+              <td>Language</td>
+              <td>: English, Hindi, Panjabi</td>
+            </tr>
+          </table>
+          <a href="#" id="button"> Downlowd CV </a>
         </div>
-        <div class="service-content">
-          <div class="card-group mt-3   ">
-            <div class="card">
-              <img src="/icons/software.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Software Developer</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                
-              </div>
-            </div>
-            <div class="card">
-              <img src="/icons/creative.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Vedio Editor</h5>
-                <p class="card-text">
-                  This card has supporting text below as a natural lead-in to
-                  additional content.
-                </p>
-                
-              </div>
-            </div>
-            <div class="card">
-              <img src="/icons/content-writing.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Content Writing</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This card has even longer
-                  content than the first to show that equal height action.
-                </p>
-                
-              </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE START -->
+  <br />
+  <br />
+  <section class="experience" id="Experience">
+    <h1 class="tit">Experience</h1>
+    <div class="container">
+      <h5 class="title text-center m-heading text-secondary mil">Experience Me</h5>
+      <div class="Experience-content">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet voluptates ut reprehenderit! Iste natus optio velit ipsa ea aliquam voluptatum consequuntur perferendis dolores sapiente perspiciatis ex deserunt iure tempora, beatae veritatis nam accusantium. Molestias et quo cumque quos aperiam fuga incidunt provident consequatur voluptates, veritatis natus accusamus reiciendis neque repellat debitis exercitationem. Itaque quod nostrum perferendis aut doloribus iste temporibus, exercitationem facere sunt voluptatem, atque quaerat numquam. Atque, laudantium recusandae quos voluptatum possimus nam sed perferendis repellendus aliquam molestias quae assumenda accusamus illum inventore amet libero perspiciatis, ullam ab soluta debitis omnis exercitationem laborum ad quo. Minima reiciendis nostrum consequuntur adipisci dolorem dignissimos nihil, blanditiis iure voluptatibus culpa aliquid excepturi. Tempore aspernatur nobis, recusandae eos quae ab. Numquam voluptates cum accusantium officiis non explicabo, quas quidem deserunt et ratione excepturi, nesciunt odit, adipisci libero commodi. Dolorem iure magni rem qui architecto at illum, rerum ut nulla! Sunt culpa accusamus inventore odit eveniet, id tempore nobis. Repellendus aperiam inventore exercitationem repudiandae vel, nemo tenetur dicta ut consectetur odio excepturi, nostrum, a minima. Ipsa perferendis minus impedit sapiente. Ab, ratione vero consequatur hic error perspiciatis assumenda temporibus dolorum facilis. Ullam est quis, quaerat incidunt obcaecati neque cupiditate voluptatem laborum nihil eos facilis!
+      </div>
+      <div class="Experience-content">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet voluptates ut reprehenderit! Iste natus optio velit ipsa ea aliquam voluptatum consequuntur perferendis dolores sapiente perspiciatis ex deserunt iure tempora, beatae veritatis nam accusantium. Molestias et quo cumque quos aperiam fuga incidunt provident consequatur voluptates, veritatis natus accusamus reiciendis neque repellat debitis exercitationem. Itaque quod nostrum perferendis aut doloribus iste temporibus, exercitationem facere sunt voluptatem, atque quaerat numquam. Atque, laudantium recusandae quos voluptatum possimus nam sed perferendis repellendus aliquam molestias quae assumenda accusamus illum inventore amet libero perspiciatis, ullam ab soluta debitis omnis exercitationem laborum ad quo. Minima reiciendis nostrum consequuntur adipisci dolorem dignissimos nihil, blanditiis iure voluptatibus culpa aliquid excepturi. Tempore aspernatur nobis, recusandae eos quae ab. Numquam voluptates cum accusantium officiis non explicabo, quas quidem deserunt et ratione excepturi, nesciunt odit, adipisci libero commodi. Dolorem iure magni rem qui architecto at illum, rerum ut nulla! Sunt culpa accusamus inventore odit eveniet, id tempore nobis. Repellendus aperiam inventore exercitationem repudiandae vel, nemo tenetur dicta ut consectetur odio excepturi, nostrum, a minima. Ipsa perferendis minus impedit sapiente. Ab, ratione vero consequatur hic error perspiciatis assumenda temporibus dolorum facilis. Ullam est quis, quaerat incidunt obcaecati neque cupiditate voluptatem laborum nihil eos facilis!
+      </div>
+    </div>
+  </section>
+  <!-- EXPERIENCE END -->
+
+
+
+
+
+
+
+
+  <!-- SERVICE END -->
+
+  <br />
+  <br />
+  <section class="service" id="Service">
+    <h1 class="tit">Service</h1>
+    <div class="container">
+      <h5 class="title text-center m-heading text-secondary mil">Service</h5>
+      <div class="text">
+
+        <p>
+          Once upon a digital time, in the realm of bytes and pixels, there was a maestro named Shivam, a freelance
+          whiz! With a flick of his fingers, intricate web applications sprung to life, dancing seamlessly across
+          screens. In the vast universe of software, he'd weave constellations of code, turning ideas into functional
+          masterpieces. Riding the clouds of AWS and Google, he'd harness their power for every project's needs. So, if
+          you're in search of a tech sorcerer to bring your visions to the virtual realm, look no further. With Shivam,
+          every digital dream becomes reality!
+        </p>
+      </div>
+      <div class="service-content">
+        <div class="card-group mt-3   ">
+          <div class="card">
+            <img src="/icons/software.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Software Developer</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+
             </div>
           </div>
-          <br>
-          <br>  
-          
-        </div>
-      </div>
-    </section>
-    <!-- SERVICE START -->
+          <div class="card">
+            <img src="/icons/creative.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Vedio Editor</h5>
+              <p class="card-text">
+                This card has supporting text below as a natural lead-in to
+                additional content.
+              </p>
 
-    <!-- PORTFOLIO END -->
+            </div>
+          </div>
+          <div class="card">
+            <img src="/icons/content-writing.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Content Writing</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer
+                content than the first to show that equal height action.
+              </p>
 
-    <!-- VALIDATION FORM START -->
-
-    <form class="row g-3" id="Contact">
-      <h1 class="tit">Contact Form</h1>
-
-      <div class="col-md-6">
-        <label for="inputName4" class="form-label">Full Name</label>
-        <input
-          type="text"
-          class="form-control"
-          id="inputName4"
-          onkeyup="validateName()"
-          placeholder="Enter your name"
-        />
-        <span class="error" id="name-error"></span>
-      </div>
-
-      <div class="col-md-3">
-        <label for="inputGender4" class="form-label">Gender</label>
-        <select id="inputState" class="form-select">
-          <option>Male</option>
-          <option>female</option>
-        </select>
-      </div>
-      <div class="col-md-3">
-        <label for="inputAge4" class="form-label">Age</label>
-        <input
-          type="number"
-          class="form-control"
-          id="inputAge4"
-          placeholder="Enter your age"
-        />
-        <span class="error" id="age-error"></span>
-      </div>
-
-      <div class="col-6">
-        <label for="inputEmail" class="form-label">Email</label>
-        <input
-          type="Email"
-          class="form-control"
-          id="inputEmail4"
-          onkeyup="validateEmail()"
-          placeholder="example@gmail.com"
-        />
-        <span class="error" id="email-error"></span>
-      </div>
-      <div class="col-6">
-        <label for="inputPhone" class="form-label">Phone</label>
-        <input
-          type="text"
-          class="form-control"
-          id="inputPhone4"
-          onkeyup="validatePhone()"
-          placeholder="(xxx)xxx-xxxx"
-        />
-        <span class="error" id="phone-error"></span>
-      </div>
-
-      <div class="col-md-4">
-        <label for="inputCity" class="form-label">City</label>
-        <input type="text" class="form-control" id="inputCity" />
-      </div>
-      <div class="col-md-4">
-        <label for="inputCity" class="form-label">Province</label>
-        <input type="text" class="form-control" id="inputCity" />
-      </div>
-      <div class="col-md-4">
-        <label for="inputState" class="form-label">Country</label>
-        <select id="inputState" class="form-select">
-          <option selected>Canada</option>
-          <option>India</option>
-        </select>
-      </div>
-
-      <div class="col-md-12">
-        <label for="inputMessage" class="form-label">Message</label>
-        <textarea
-          class="form-control"
-          id="inputMessage4"
-          onkeyup="validateMessage()"
-          cols="50"
-          rows="4"
-          placeholder="Enter your message"
-        ></textarea>
-        <span class="error" id="message-error"></span>
-      </div>
-
-      <div class="col-12">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck" />
-          <label class="form-check-label" for="gridCheck"> Check me out </label>
-        </div>
-      </div>
-      <div class="col-12">
-        <button type="submit" id="button" onclick="return validateForm()">
-          Submit
-        </button>
-        <span class="error" id="submit-error"></span>
-      </div>
-    </form>
-    <br />
-    <!-- VALIDATION FORM END -->
-
-    <!-- FOOTER START -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <p>&copy; 2024 Milan Parihar. All rights reserved.</p>
+            </div>
           </div>
         </div>
+        <br>
+        <br>
+
       </div>
-    </footer>
-    <!-- FOOTER END -->
+    </div>
+  </section>
+  <!-- SERVICE START -->
 
-    <!-- JS LINK -->
-    <script src="Script.js"></script>
 
-    <!-- BOOTSTRAP JAVASCRIPT -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- VALIDATION FORM START -->
+
+  <form class="row g-3" id="Contact">
+    <h1 class="tit">Contact Form</h1>
+
+    <div class="col-md-6">
+      <label for="inputName4" class="form-label">Full Name</label>
+      <input type="text" class="form-control" id="inputName4" onkeyup="validateName()" placeholder="Enter your name" />
+      <span class="error" id="name-error"></span>
+    </div>
+
+    <div class="col-md-3">
+      <label for="inputGender4" class="form-label">Gender</label>
+      <select id="inputState" class="form-select">
+        <option>Male</option>
+        <option>female</option>
+      </select>
+    </div>
+    <div class="col-md-3">
+      <label for="inputAge4" class="form-label">Age</label>
+      <input type="number" class="form-control" id="inputAge4" placeholder="Enter your age" />
+      <span class="error" id="age-error"></span>
+    </div>
+
+    <div class="col-6">
+      <label for="inputEmail" class="form-label">Email</label>
+      <input type="Email" class="form-control" id="inputEmail4" onkeyup="validateEmail()"
+        placeholder="example@gmail.com" />
+      <span class="error" id="email-error"></span>
+    </div>
+    <div class="col-6">
+      <label for="inputPhone" class="form-label">Phone</label>
+      <input type="text" class="form-control" id="inputPhone4" onkeyup="validatePhone()" placeholder="(xxx)xxx-xxxx" />
+      <span class="error" id="phone-error"></span>
+    </div>
+
+    <div class="col-md-4">
+      <label for="inputCity" class="form-label">City</label>
+      <input type="text" class="form-control" id="inputCity" />
+    </div>
+    <div class="col-md-4">
+      <label for="inputCity" class="form-label">Province</label>
+      <input type="text" class="form-control" id="inputCity" />
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">Country</label>
+      <select id="inputState" class="form-select">
+        <option selected>Canada</option>
+        <option>India</option>
+      </select>
+    </div>
+
+    <div class="col-md-12">
+      <label for="inputMessage" class="form-label">Message</label>
+      <textarea class="form-control" id="inputMessage4" onkeyup="validateMessage()" cols="50" rows="4"
+        placeholder="Enter your message"></textarea>
+      <span class="error" id="message-error"></span>
+    </div>
+
+ 
+    <div class="col-12">
+      <button type="submit" id="button" onclick="return validateForm()">
+        Submit
+      </button>
+      <span class="error" id="submit-error"></span>
+    </div>
+  </form>
+  <br />
+  <!-- VALIDATION FORM END -->
+
+  <!-- FOOTER START -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>&copy; 2024 Milan Parihar. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+
+  <!-- JS LINK -->
+  <script src="Script.js"></script>
+
+  <!-- BOOTSTRAP JAVASCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -70,7 +70,6 @@ color: #FEC544;
 }
 
 #Home{
-    background-image: url(/icons/homeimg.avif);
     display: flex;
     justify-content: space-around;
     height: 45rem;
@@ -78,7 +77,7 @@ color: #FEC544;
 .show-image img{ 
    bottom: 0;
    top:0;
-    width: 500px;
+    width: 400px;
     height: 100%;
     right: 0;
     /* position: absolute; */
@@ -89,8 +88,22 @@ color: #FEC544;
     overflow: hidden;
 }
 
+@media only screen and (max-width: 600px) {
+    /* Styles for screens with a maximum width of 600 pixels or less */
+    .show-image img {
+      display: none;
+    }
+  }
+
+
 /* Custom styles for the About */
 .about{
+    padding: 100px 60px;
+}
+
+
+/* Custom styles for the About */
+.experience{
     padding: 100px 60px;
 }
 
@@ -99,12 +112,12 @@ color: #FEC544;
 
 /* Custom styles for the contact */
 #Contact{
-    padding: 56px 60px;
+    padding: 100px 60px;
 }
 
 /* Custom styles for the Service */
 #Service{
-    padding: 56px 60px;
+    padding: 100px 60px;
 }
 .card img{
     width: 200px;
@@ -118,6 +131,10 @@ color: #FEC544;
     position: inherit!important;
 }
 
+/* Custom styles for the Experience */
+/* #Experience{
+    padding: 100px 60px;
+} */
 /* Custom styles for the footer */
 footer {
   background-color: #0f0f0f;
